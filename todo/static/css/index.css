@@ -190,19 +190,19 @@ body {
   .signup-box,
   .signup-box1,
   .signup-box2{
-      width: 90%;  /* Ajuste a largura para 90% da tela */
-      height: auto;  /* Deixe a altura automática para se ajustar ao conteúdo */
-      padding: 10px;  /* Reduza o padding para telas menores */
+      width: 90%;
+      height: auto;
+      padding: 10px;
   }
   .signup-box2{
     margin-left: 10px;
   }
   .inp, .submit-button, .line, .anc, .anclog {
     margin-left: 0px;  
-    width: 100%;  /* Certifique-se de que os elementos internos também se ajustem */
+    width: 100%;
   }
   .heading, .headingtodo, b {
-      font-size: 20px;  /* Ajuste o tamanho da fonte para se adequar à tela menor */
+      font-size: 20px;
   }
   .anc{
     margin-left: 160px;
