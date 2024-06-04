@@ -45,7 +45,8 @@ def loginn(request):
             return redirect('/loginn')
                
     return render(request, 'loginn.html')
-        
+
+@login_required(login_url='/loginn')
 def todopage(request):
     if request.method == 'POST':
         title=request.POST.get('title')
