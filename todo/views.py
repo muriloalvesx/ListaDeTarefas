@@ -80,7 +80,8 @@ def edit_todo(request, srno):
     return render(request, 'edit_todo.html', {'obj': obj})
 
 
-
+def custom_500(request):
+    return render(request, '500.html', status=500)
 
 
 def signout(request):
