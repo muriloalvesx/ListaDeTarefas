@@ -66,7 +66,6 @@ def delete_todo(request,srno):
     obj.delete()
     return redirect('/todopage')
 
-@login_required(login_url='/loginn')
 def edit_todo(request, srno):
     if request.method == 'POST':
         title = request.POST.get('title')
