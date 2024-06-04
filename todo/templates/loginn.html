@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Brands:wght@400&display=swap" />
+</head>
+
+<body>
+  <div class="signup-login">
+    <div class="signup-box1">
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="heading">
+          Entrar
+        </div>
+        <div class="line"></div>
+        <div class="field">
+          <b>Usuário</b>
+          <input class="inp" type="text" name="fnm" required placeholder="Insira seu nome de usuário">
+        </div>
+        <div class="field">
+          <b>Senha</b>
+          <input class="inp" type="password" name="pwd" required placeholder="Insira sua senha">
+        </div>
+        <div class="field">
+          <input class="submit-button" type="submit" value="Acessar">
+        </div>
+        <div class="line"></div>
+        <div class="field">
+          <b style="margin-left:150px;">Não tem uma conta? </b>
+          <br>
+          <a class="anc" style="margin-left: 200px;" href="/signup">Cadastrar</a>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
